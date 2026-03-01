@@ -176,7 +176,7 @@ const Index = () => {
       <footer className="border-t border-border bg-primary py-16">
         <div className="container mx-auto px-4 text-center">
           <div className="flex items-center justify-center mb-6">
-            <img src="/placeholder.svg" alt="L'M3alem Logo" className="h-12 w-auto object-contain brightness-0 invert" />
+            <img src="/logo.png" alt="L'M3alem Logo" className="h-12 w-auto object-contain brightness-0 invert" />
           </div>
           <p className="text-primary-foreground/60 max-w-xl mx-auto mb-8 italic leading-relaxed">
             "التكنولوجيا فخدمة الناس، والتقاليد تتطور بالابتكار."
