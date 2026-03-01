@@ -2,7 +2,11 @@ import axios from 'axios';
 
 const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL || 'http://localhost:8000',
-  headers: { 'Content-Type': 'application/json' },
+  headers: {
+    'Content-Type': 'application/json',
+    // Required for ngrok free tunnel to bypass browser warning/interstitial.
+    'ngrok-skip-browser-warning': 'true',
+  },
 });
 
 api.interceptors.request.use((config) => {
@@ -10,6 +14,7 @@ api.interceptors.request.use((config) => {
   if (token) {
     config.headers.Authorization = `Bearer ${token}`;
   }
+  config.headers['ngrok-skip-browser-warning'] = 'true';
   return config;
 });
 
@@ -24,12 +29,5 @@ api.interceptors.response.use(
     return Promise.reject(error);
   }
 );
-
-// Optional: ping backend on app load (non-blocking)
-if (typeof window !== 'undefined') {
-  api.get('/docs').catch(() => {
-    console.warn('Backend not reachable at', import.meta.env.VITE_API_URL || 'http://localhost:8000');
-  });
-}
 
 export default api;
