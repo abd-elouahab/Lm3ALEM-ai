@@ -20,7 +20,7 @@ export const Navbar = () => {
     <nav className="sticky top-0 z-50 border-b border-border bg-card/80 backdrop-blur-xl">
       <div className="w-full flex h-16 items-center justify-between pr-4 md:pr-8 pl-0">
         <Link to="/" className="flex items-center group">
-          <img src="/logo.png" alt="L'M3alem Logo" className="h-14 md:h-16 w-auto object-contain scale-110 md:scale-125 origin-left" />
+          <img src="/placeholder.svg" alt="L'M3alem Logo" className="h-14 md:h-16 w-auto object-contain scale-110 md:scale-125 origin-left" />
         </Link>
 
         {/* Desktop */}

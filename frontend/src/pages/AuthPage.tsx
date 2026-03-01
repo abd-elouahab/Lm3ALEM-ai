@@ -129,7 +129,7 @@ const AuthPage = () => {
         <div className="absolute inset-0 opacity-[0.08] bg-cover bg-center" style={{ backgroundImage: `url(${zelligePattern})` }} />
         <div className="relative flex flex-col items-center justify-center p-12 text-center w-full">
           <div className="flex items-center justify-center mb-8">
-            <img src="/logo.png" alt="L'M3alem Logo" className="h-16 w-auto object-contain" />
+            <img src="/placeholder.svg" alt="L'M3alem Logo" className="h-16 w-auto object-contain" />
           </div>
           <h2 className="text-2xl font-bold text-primary-foreground/90 mb-4 max-w-md">
             المنصة لي كتربط المعلمين ديال سوس ماسة بلي محتاجينهم
@@ -145,7 +145,7 @@ const AuthPage = () => {
         <div className="w-full max-w-md">
           {/* Mobile logo */}
           <div className="lg:hidden flex items-center justify-center mb-8">
-            <img src="/logo.png" alt="L'M3alem Logo" className="h-12 w-auto object-contain" />
+            <img src="/placeholder.svg" alt="L'M3alem Logo" className="h-12 w-auto object-contain" />
           </div>
 
           {/* Tab toggle */}
