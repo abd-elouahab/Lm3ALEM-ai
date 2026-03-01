@@ -1,0 +1,71 @@
+﻿./venv/Scripts/python : 
+INFO:     Will watch for 
+changes in these 
+directories: ['D:\\Hackatho
+n_Project\\backend']
+At line:1 char:1
++ ./venv/Scripts/python -m 
+uvicorn app.main:app 
+--reload --port 8000 2> ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~
+    + CategoryInfo         
+     : NotSpecifi    ed: 
+(INFO:     Wil    l 
+...ject\\backend    
+']:String) [], Rem    
+oteException
+    + FullyQualifiedEr    
+rorId : NativeComm    
+andError
+ 
+INFO:     Uvicorn running 
+on http://127.0.0.1:8000 
+(Press CTRL+C to quit)
+INFO:     Started reloader 
+process [28612] using 
+WatchFiles
+INFO:     Started server 
+process [15500]
+INFO:     Waiting for 
+application startup.
+INFO:     Application 
+startup complete.
+INFO:     127.0.0.1:62107 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "OPTIONS /auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /auth/me HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "OPTIONS /jobs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /jobs HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:55865 - "OPTIONS /jobs/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55865 - "GET /jobs/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60156 - "OPTIONS /jobs/chat HTTP/1.1" 200 OK
+Traceback (most recent 
+call last):
+  File "D:\Hackathon_Projec
+t\backend\app\routers\jobs.
+py", line 177, in 
+chat_endpoint
+    return chat_with_ai(
+           ^^^^^^^^^^^^^
+  File "D:\Hackathon_Projec
+t\backend\app\ai\chat.py", 
+line 154, in chat_with_ai
+    print(f"[CHAT T1] 
+{raw[:100]}")
+  File "D:\Apps\Python\Lib\
+encodings\cp1252.py", line 
+19, in encode
+    return codecs.charmap_e
+ncode(input,self.errors,enc
+oding_table)[0]
+           ^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^
+UnicodeEncodeError: 
+'charmap' codec can't 
+encode characters in 
+position 10-13: character 
+maps to <undefined>
+INFO:     127.0.0.1:60156 - "POST /jobs/chat HTTP/1.1" 500 Internal Server Error

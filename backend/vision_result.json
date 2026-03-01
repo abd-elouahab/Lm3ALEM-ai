@@ -1,0 +1,10 @@
+{
+  "problem_type": "gebbas",
+  "description": "",
+  "diagnosis_notes": "",
+  "severity": 3,
+  "surface_area_m2": 1.0,
+  "complexity": "moyenne",
+  "nb_elements_affected": 1,
+  "confidence": "low"
+}

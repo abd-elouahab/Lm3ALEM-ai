@@ -1,0 +1,1 @@
+BadRequestError("Error code: 400 - {'code': 'Client specified an invalid argument', 'error': 'Model not found: grok-4V'}")
